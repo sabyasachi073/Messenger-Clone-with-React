@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Benne&display=swap');
+
+.message {
+    padding: 10px;
+    margin: 5px 10px;
+    width: fit-content;
+    max-width: 70%;
+}
+
+.message__user {
+    margin-left: auto;
+    color: white;
+    text-align: left !important;
+}
+
+.MuiCard-root {
+    border-radius: 25px !important;
+}
+
+.MuiCardContent-root {
+    padding: 15px 20px !important;
+    /* margin: auto 10px */
+}
+
+.message__userCard{
+    background-color: #68c0db !important;
+}
+
+.message__guestCard{
+    background-color: #c1c8e4 !important;
+}
+
+.message__text{
+    text-align: left !important;
+    font-size: medium !important;
+    line-height: 1.2 !important;
+}
+
+.message__time {
+    text-align: left;
+    font-size: x-small !important;
+    margin-top: 10px !important;
+}
+
+.user {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'Benne', serif;
+    color: #535c68;
+    letter-spacing: 0;
+    font-weight: 600;
+}

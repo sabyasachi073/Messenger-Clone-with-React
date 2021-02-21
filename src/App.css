@@ -1,38 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+
 .App {
+  margin: 0;
+  background-image: url(background.jpg);
+  background-size: cover;
+  width: 100%  !important;
+  height: 100% !important;
   text-align: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header{
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.welcome__bar {
+  position: fixed;
+  top: 0;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px;
+  z-index: 1;
+}
+
+header > h2 {
+  margin: 0;
+  padding: 15px;
+  background-color: #272727;
+  color: #e9e9eb;
+  width: 100%;
+}
+
+.Welcome__text{
+  width: 100%;
+  max-width: 80%;
+  text-align: center;
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+.logo__container{
+  position: absolute;
+  left: 15px;
+}
+.logo {
+  width: 28px;
+  margin-right: 10px;
+}
+
+.logo__text{
+  text-transform: uppercase;
+  font-size: small;
+  font-family: 'Reggae One', cursive;
+  vertical-align: super;
+}
+.app__form {
+  position: fixed;
+  bottom: 0px;
+  z-index: 5;
+  background-color: #e9e9eb;
+  width: 100%;
+  border-radius: 50px;
+  margin: 5px;
+}
+
+.app__formControl {
+  margin:5px 20px !important;
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.app__input {
+  flex: 1 !important;
+  /* It takes as much space as it need */
+}
+
+.app__iconButton {
+  flex: 0 !important;
+  /* It takes only limited amount of space that it require */
+}
+
+@media(max-width : 800px){
+  .logo__text {
+    display: none;
+  }
+
+  .logo{
+    width: 30px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.spacer{
+  position: relative;
+  top: 100%;
+  width: 100%;
+  margin: 0px;
+  z-index: 1;
+  height: 9vh;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.message__hide {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 1vh;
+  z-index: 2;
+  background-image: url('background.jpg');
+  background-size: cover;
 }
