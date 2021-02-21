@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Messenger Clone with React JS and Firebase
+
+Link to the app- https://messenger-clone-85d04.web.app
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
